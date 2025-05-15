@@ -3195,7 +3195,7 @@
 			)
 		)
 		(instances
-			(project "Battery_Protector"
+			(project "battery_protector"
 				(path "/b2975477-3b95-446c-b662-4cca32764c73"
 					(page "3")
 				)
@@ -3238,7 +3238,7 @@
 			)
 		)
 		(instances
-			(project "Battery_Protector"
+			(project "battery_protector"
 				(path "/b2975477-3b95-446c-b662-4cca32764c73"
 					(page "2")
 				)
@@ -3281,7 +3281,7 @@
 			)
 		)
 		(instances
-			(project "Battery_Protector"
+			(project "battery_protector"
 				(path "/b2975477-3b95-446c-b662-4cca32764c73"
 					(page "5")
 				)
@@ -3324,7 +3324,7 @@
 			)
 		)
 		(instances
-			(project "Battery_Protector"
+			(project "battery_protector"
 				(path "/b2975477-3b95-446c-b662-4cca32764c73"
 					(page "6")
 				)
@@ -3367,7 +3367,7 @@
 			)
 		)
 		(instances
-			(project "Battery_Protector"
+			(project "battery_protector"
 				(path "/b2975477-3b95-446c-b662-4cca32764c73"
 					(page "4")
 				)
