@@ -595,7 +595,7 @@
       "version": 1
     },
     "net_format_name": "",
-    "page_layout_descr_file": "",
+    "page_layout_descr_file": "Top_Level",
     "plot_directory": "",
     "space_save_all_events": true,
     "spice_current_sheet_as_root": false,
@@ -607,6 +607,31 @@
     "subpart_first_id": 65,
     "subpart_id_separator": 0
   },
-  "sheets": [],
+  "sheets": [
+    [
+      "b2975477-3b95-446c-b662-4cca32764c73",
+      "Root"
+    ],
+    [
+      "60172fae-36a9-4c2c-a77c-3b2f4e907501",
+      "Protection"
+    ],
+    [
+      "3c7201c3-3cb4-4689-bd07-73639f0d174a",
+      "DC-DC"
+    ],
+    [
+      "de1325c4-0edb-4a9a-bc0f-47e138764fec",
+      "MCU"
+    ],
+    [
+      "b4114c58-5862-440e-b7bf-85e61f2bb435",
+      "GateDriver"
+    ],
+    [
+      "b7e2baeb-974f-4710-92fe-458427da830c",
+      "USB_PD"
+    ]
+  ],
   "text_variables": {}
 }
