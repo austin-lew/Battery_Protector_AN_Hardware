@@ -3342,13 +3342,13 @@
 			)
 		)
 		(pin "G"
-			(uuid "72599dd4-ac93-454b-b2c4-33bb27bec7f3")
+			(uuid "72599dd4-ac93-454b-b2c4-33bb27bec7f4")
 		)
 		(pin "D"
-			(uuid "198fd775-04a2-4014-9c74-14acd84dc423")
+			(uuid "198fd775-04a2-4014-9c74-14acd84dc424")
 		)
 		(pin "S"
-			(uuid "654cadc9-e542-48c1-80e8-b14ef2e4a093")
+			(uuid "654cadc9-e542-48c1-80e8-b14ef2e4a094")
 		)
 		(instances
 			(project ""
