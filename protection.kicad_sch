@@ -1180,6 +1180,131 @@
 			)
 			(embedded_fonts no)
 		)
+		(symbol "power:+3V3"
+			(power)
+			(pin_numbers
+				(hide yes)
+			)
+			(pin_names
+				(offset 0)
+				(hide yes)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "#PWR"
+				(at 0 -3.81 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Value" "+3V3"
+				(at 0 3.556 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "Power symbol creates a global label with name \"+3V3\""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "global power"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "+3V3_0_1"
+				(polyline
+					(pts
+						(xy -0.762 1.27) (xy 0 2.54)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0 2.54) (xy 0.762 1.27)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0 0) (xy 0 2.54)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "+3V3_1_1"
+				(pin power_in line
+					(at 0 0 90)
+					(length 0)
+					(name "~"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
 		(symbol "power:GND"
 			(power)
 			(pin_numbers
@@ -1568,6 +1693,16 @@
 	)
 	(wire
 		(pts
+			(xy 24.13 66.04) (xy 24.13 69.85)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "46db906e-4f0f-4862-8221-290e32a0ec8b")
+	)
+	(wire
+		(pts
 			(xy 140.97 104.14) (xy 161.29 104.14)
 		)
 		(stroke
@@ -1758,6 +1893,16 @@
 	)
 	(wire
 		(pts
+			(xy 228.6 69.85) (xy 228.6 67.31)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "bff948f3-f291-4edd-8560-c7023b266200")
+	)
+	(wire
+		(pts
 			(xy 127 104.14) (xy 127 97.79)
 		)
 		(stroke
@@ -1775,16 +1920,6 @@
 			(type default)
 		)
 		(uuid "d14eaea4-cd1a-4807-9944-a9c6275ade2f")
-	)
-	(wire
-		(pts
-			(xy 25.4 69.85) (xy 40.64 69.85)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "d59e17c8-83ab-4448-ac67-2edb130471fd")
 	)
 	(wire
 		(pts
@@ -1866,6 +2001,16 @@
 		)
 		(uuid "fb0ec699-04ad-43a2-b08a-7abf726c24ce")
 	)
+	(wire
+		(pts
+			(xy 24.13 69.85) (xy 40.64 69.85)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "fded6711-b8f1-45c1-9967-1872a97714e0")
+	)
 	(hierarchical_label "SOURCE_A"
 		(shape output)
 		(at 157.48 77.47 180)
@@ -1888,17 +2033,6 @@
 		)
 		(uuid "687ed26e-331a-460b-a590-fc8849e2a689")
 	)
-	(hierarchical_label "BAT+"
-		(shape input)
-		(at 25.4 69.85 180)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right)
-		)
-		(uuid "6d146e3a-0561-433d-bcbc-cf6114bb418f")
-	)
 	(hierarchical_label "IS_P"
 		(shape output)
 		(at 25.4 104.14 180)
@@ -1920,17 +2054,6 @@
 			(justify right)
 		)
 		(uuid "b712127f-3e73-407d-9519-44b533849710")
-	)
-	(hierarchical_label "LOAD+"
-		(shape output)
-		(at 228.6 69.85 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left)
-		)
-		(uuid "b979d219-3de2-48bc-bc59-88b997f2191d")
 	)
 	(symbol
 		(lib_id "Device:R")
@@ -2281,6 +2404,72 @@
 			(project "Battery_Protector"
 				(path "/b2975477-3b95-446c-b662-4cca32764c73/60172fae-36a9-4c2c-a77c-3b2f4e907501"
 					(reference "#PWR018")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:+3V3")
+		(at 228.6 67.31 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "2bb1cc4f-0739-4b2e-ba37-0b398c93e5a6")
+		(property "Reference" "#PWR054"
+			(at 228.6 71.12 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "LOAD+"
+			(at 228.6 62.23 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 228.6 67.31 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 228.6 67.31 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"+3V3\""
+			(at 228.6 67.31 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "da7536c4-a0cf-4c86-8a93-7df1c0451ad7")
+		)
+		(instances
+			(project "battery_protector"
+				(path "/b2975477-3b95-446c-b662-4cca32764c73/60172fae-36a9-4c2c-a77c-3b2f4e907501"
+					(reference "#PWR054")
 					(unit 1)
 				)
 			)
@@ -3222,6 +3411,72 @@
 		)
 	)
 	(symbol
+		(lib_id "power:+3V3")
+		(at 24.13 66.04 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "db2caca0-7762-4346-9175-9e5d8828aeab")
+		(property "Reference" "#PWR053"
+			(at 24.13 69.85 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "BAT+"
+			(at 24.13 60.96 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 24.13 66.04 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 24.13 66.04 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"+3V3\""
+			(at 24.13 66.04 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "92958b9d-5611-4fed-bf34-44abb454ad65")
+		)
+		(instances
+			(project "battery_protector"
+				(path "/b2975477-3b95-446c-b662-4cca32764c73/60172fae-36a9-4c2c-a77c-3b2f4e907501"
+					(reference "#PWR053")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "power:GND")
 		(at 198.12 113.03 0)
 		(unit 1)
@@ -3342,13 +3597,13 @@
 			)
 		)
 		(pin "G"
-			(uuid "72599dd4-ac93-454b-b2c4-33bb27bec7f3")
+			(uuid "72599dd4-ac93-454b-b2c4-33bb27bec7f4")
 		)
 		(pin "D"
-			(uuid "198fd775-04a2-4014-9c74-14acd84dc423")
+			(uuid "198fd775-04a2-4014-9c74-14acd84dc424")
 		)
 		(pin "S"
-			(uuid "654cadc9-e542-48c1-80e8-b14ef2e4a093")
+			(uuid "654cadc9-e542-48c1-80e8-b14ef2e4a094")
 		)
 		(instances
 			(project ""
