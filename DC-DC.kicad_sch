@@ -2216,6 +2216,131 @@
 			)
 			(embedded_fonts no)
 		)
+		(symbol "power:+3V3"
+			(power)
+			(pin_numbers
+				(hide yes)
+			)
+			(pin_names
+				(offset 0)
+				(hide yes)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "#PWR"
+				(at 0 -3.81 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Value" "+3V3"
+				(at 0 3.556 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "Power symbol creates a global label with name \"+3V3\""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "global power"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "+3V3_0_1"
+				(polyline
+					(pts
+						(xy -0.762 1.27) (xy 0 2.54)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0 2.54) (xy 0.762 1.27)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0 0) (xy 0 2.54)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "+3V3_1_1"
+				(pin power_in line
+					(at 0 0 90)
+					(length 0)
+					(name "~"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
 		(symbol "power:+5V"
 			(power)
 			(pin_numbers
@@ -4023,17 +4148,6 @@
 		)
 		(uuid "f33a278e-2e20-484d-b23d-328790e2dbf2")
 	)
-	(hierarchical_label "BAT+"
-		(shape input)
-		(at 25.4 50.8 180)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right)
-		)
-		(uuid "6d146e3a-0561-433d-bcbc-cf6114bb418f")
-	)
 	(hierarchical_label "USB_DN"
 		(shape output)
 		(at 139.7 200.66 0)
@@ -4140,88 +4254,6 @@
 			(project ""
 				(path "/b2975477-3b95-446c-b662-4cca32764c73/3c7201c3-3cb4-4689-bd07-73639f0d174a"
 					(reference "U5")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:C")
-		(at 76.2 82.55 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "08ecf397-5e77-4ea0-8dda-ca8e3da276a2")
-		(property "Reference" "C2"
-			(at 80.01 81.2799 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "100n"
-			(at 80.01 83.8199 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" ""
-			(at 77.1652 86.36 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 76.2 82.55 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Unpolarized capacitor"
-			(at 76.2 82.55 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "2"
-			(uuid "5f8d95c4-4e4a-478f-ae80-e3d894ac17e6")
-		)
-		(pin "1"
-			(uuid "d63c6f9e-3b07-4958-ab1f-652fefd217e6")
-		)
-		(instances
-			(project "Battery_Protector"
-				(path "/b2975477-3b95-446c-b662-4cca32764c73/3c7201c3-3cb4-4689-bd07-73639f0d174a"
-					(reference "C2")
-					(unit 1)
-				)
-				(path "/b2975477-3b95-446c-b662-4cca32764c73/60172fae-36a9-4c2c-a77c-3b2f4e907501"
-					(reference "C1")
-					(unit 1)
-				)
-				(path "/b2975477-3b95-446c-b662-4cca32764c73/b4114c58-5862-440e-b7bf-85e61f2bb435"
-					(reference "C4")
-					(unit 1)
-				)
-				(path "/b2975477-3b95-446c-b662-4cca32764c73/de1325c4-0edb-4a9a-bc0f-47e138764fec"
-					(reference "C3")
 					(unit 1)
 				)
 			)
@@ -4496,73 +4528,6 @@
 			(project ""
 				(path "/b2975477-3b95-446c-b662-4cca32764c73/3c7201c3-3cb4-4689-bd07-73639f0d174a"
 					(reference "D10")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:GND")
-		(at 66.04 132.08 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "263cf621-9a0a-472e-bcae-4f91f9c213a2")
-		(property "Reference" "#PWR014"
-			(at 66.04 138.43 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "GND"
-			(at 66.04 137.16 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Footprint" ""
-			(at 66.04 132.08 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 66.04 132.08 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 66.04 132.08 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "dff06279-26ad-4f44-b612-09f0af7fa0f4")
-		)
-		(instances
-			(project "Battery_Protector"
-				(path "/b2975477-3b95-446c-b662-4cca32764c73/3c7201c3-3cb4-4689-bd07-73639f0d174a"
-					(reference "#PWR014")
 					(unit 1)
 				)
 			)
@@ -5020,6 +4985,72 @@
 		)
 	)
 	(symbol
+		(lib_id "power:+3V3")
+		(at 25.4 50.8 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "5c13b14d-864f-4b35-b19b-159419cb1f9e")
+		(property "Reference" "#PWR061"
+			(at 25.4 54.61 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "BAT+"
+			(at 25.4 45.72 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 25.4 50.8 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 25.4 50.8 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"+3V3\""
+			(at 25.4 50.8 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "7d55e817-3f1e-4554-8fbd-59b4c3a32c6f")
+		)
+		(instances
+			(project "battery_protector"
+				(path "/b2975477-3b95-446c-b662-4cca32764c73/3c7201c3-3cb4-4689-bd07-73639f0d174a"
+					(reference "#PWR061")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Device:R")
 		(at 342.9 132.08 180)
 		(unit 1)
@@ -5153,6 +5184,73 @@
 			(project "battery_protector"
 				(path "/b2975477-3b95-446c-b662-4cca32764c73/3c7201c3-3cb4-4689-bd07-73639f0d174a"
 					(reference "C20")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 66.04 132.08 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "6732c733-0049-4fc1-9cce-10ffa30b56e9")
+		(property "Reference" "#PWR014"
+			(at 66.04 138.43 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 66.04 137.16 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Footprint" ""
+			(at 66.04 132.08 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 66.04 132.08 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 66.04 132.08 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "dff06279-26ad-4f44-b612-09f0af7fa0f4")
+		)
+		(instances
+			(project "Battery_Protector"
+				(path "/b2975477-3b95-446c-b662-4cca32764c73/3c7201c3-3cb4-4689-bd07-73639f0d174a"
+					(reference "#PWR014")
 					(unit 1)
 				)
 			)
@@ -5573,6 +5671,88 @@
 			(project "Battery_Protector"
 				(path "/b2975477-3b95-446c-b662-4cca32764c73/3c7201c3-3cb4-4689-bd07-73639f0d174a"
 					(reference "R22")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:C")
+		(at 76.2 82.55 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "8a4f3be3-bff9-4e76-870a-33a0c8ee53d1")
+		(property "Reference" "C2"
+			(at 80.01 81.2799 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "100n"
+			(at 80.01 83.8199 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" ""
+			(at 77.1652 86.36 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 76.2 82.55 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Unpolarized capacitor"
+			(at 76.2 82.55 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "5f8d95c4-4e4a-478f-ae80-e3d894ac17e6")
+		)
+		(pin "1"
+			(uuid "d63c6f9e-3b07-4958-ab1f-652fefd217e6")
+		)
+		(instances
+			(project "Battery_Protector"
+				(path "/b2975477-3b95-446c-b662-4cca32764c73/3c7201c3-3cb4-4689-bd07-73639f0d174a"
+					(reference "C2")
+					(unit 1)
+				)
+				(path "/b2975477-3b95-446c-b662-4cca32764c73/60172fae-36a9-4c2c-a77c-3b2f4e907501"
+					(reference "C1")
+					(unit 1)
+				)
+				(path "/b2975477-3b95-446c-b662-4cca32764c73/b4114c58-5862-440e-b7bf-85e61f2bb435"
+					(reference "C4")
+					(unit 1)
+				)
+				(path "/b2975477-3b95-446c-b662-4cca32764c73/de1325c4-0edb-4a9a-bc0f-47e138764fec"
+					(reference "C3")
 					(unit 1)
 				)
 			)
