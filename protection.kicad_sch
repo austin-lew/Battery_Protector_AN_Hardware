@@ -448,156 +448,6 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "Device:D_Zener"
-			(pin_numbers
-				(hide yes)
-			)
-			(pin_names
-				(offset 1.016)
-				(hide yes)
-			)
-			(exclude_from_sim no)
-			(in_bom yes)
-			(on_board yes)
-			(property "Reference" "D"
-				(at 0 2.54 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Value" "D_Zener"
-				(at 0 -2.54 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Footprint" ""
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Datasheet" "~"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Description" "Zener diode"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "ki_keywords" "diode"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "ki_fp_filters" "TO-???* *_Diode_* *SingleDiode* D_*"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(symbol "D_Zener_0_1"
-				(polyline
-					(pts
-						(xy -1.27 -1.27) (xy -1.27 1.27) (xy -0.762 1.27)
-					)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 1.27 0) (xy -1.27 0)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 1.27 -1.27) (xy 1.27 1.27) (xy -1.27 0) (xy 1.27 -1.27)
-					)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-			)
-			(symbol "D_Zener_1_1"
-				(pin passive line
-					(at -3.81 0 0)
-					(length 2.54)
-					(name "K"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 3.81 0 180)
-					(length 2.54)
-					(name "A"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "2"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-			)
-			(embedded_fonts no)
-		)
 		(symbol "Device:R"
 			(pin_numbers
 				(hide yes)
@@ -1258,18 +1108,6 @@
 		(uuid 2f9e233b-0de0-4afb-b12d-f1a097c46549)
 	)
 	(rectangle
-		(start 203.2 132.08)
-		(end 246.38 160.02)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(fill
-			(type none)
-		)
-		(uuid 4a13de05-e57f-4c54-94dc-d0556227fb2b)
-	)
-	(rectangle
 		(start 113.03 119.38)
 		(end 133.35 172.72)
 		(stroke
@@ -1304,7 +1142,7 @@
 		)
 		(uuid "6be9a038-7adf-4799-9548-524972892238")
 	)
-	(text "Do we need an asymmetrical gate drive???"
+	(text "Asymmetrical gate drive: slower turn-on"
 		(exclude_from_sim no)
 		(at 163.068 175.514 0)
 		(effects
@@ -1313,16 +1151,6 @@
 			)
 		)
 		(uuid "732e7edd-0dcb-49d5-a73b-b3904be4a98f")
-	)
-	(text "What does the zener do?"
-		(exclude_from_sim no)
-		(at 225.552 162.56 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-		)
-		(uuid "7b384888-67fc-4374-9c91-46e7a456f4c4")
 	)
 	(text "Current Sense\n"
 		(exclude_from_sim no)
@@ -1355,7 +1183,7 @@
 		)
 		(uuid "dfa9e86d-5269-4936-9cdc-8e93da748291")
 	)
-	(text_box "Nominal motor current: 20A\nThreshold current = 20A * 250% = 50A\nShunt amplifier gain: 15V/V\nDesired shutoff: 0.25*V_DD = 0.825V\n\nShunt voltage = 0.825/15 = 0.055V\nShunt resistance = 0.055V/50A = 1.1 mOhm\nShunt power = 1.1 mOhm * (50A)^2 = 2.75W\n"
+	(text_box "Nominal motor current: 20A\nThreshold current = 20A * 250% = 50A\nShunt amplifier gain: 15V/V\nGD_V_OCTH3H: 0.25*V_DD = 0.825V\n\nShunt voltage = 0.825/15 = 0.055V\nShunt resistance = 0.055V/50A = 1.1 mOhm\nShunt power = 1.1 mOhm * (50A)^2 = 2.75W\n"
 		(exclude_from_sim no)
 		(at 36.83 85.09 0)
 		(size 52.07 17.78)
@@ -1436,12 +1264,6 @@
 		(uuid "4721c77c-9389-4af4-9737-a3105b584591")
 	)
 	(junction
-		(at 233.68 156.21)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "544d6783-864b-4365-afbe-2e9288d3d69e")
-	)
-	(junction
 		(at 199.39 156.21)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -1458,12 +1280,6 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "5cf526a0-463c-4a04-9250-b5c0b99558fc")
-	)
-	(junction
-		(at 236.22 49.53)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "708732a1-c8c9-4a93-98e7-437bbabb9381")
 	)
 	(junction
 		(at 168.91 121.92)
@@ -1645,7 +1461,7 @@
 	)
 	(wire
 		(pts
-			(xy 224.79 49.53) (xy 236.22 49.53)
+			(xy 224.79 49.53) (xy 250.19 49.53)
 		)
 		(stroke
 			(width 0)
@@ -1685,16 +1501,6 @@
 	)
 	(wire
 		(pts
-			(xy 275.59 90.17) (xy 285.75 90.17)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "2df7477e-5432-4a87-a00b-b1454a838f6b")
-	)
-	(wire
-		(pts
 			(xy 153.67 49.53) (xy 158.75 49.53)
 		)
 		(stroke
@@ -1705,23 +1511,13 @@
 	)
 	(wire
 		(pts
-			(xy 233.68 156.21) (xy 224.79 156.21)
+			(xy 224.79 156.21) (xy 250.19 156.21)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
 		(uuid "2e87b28a-b840-4274-bd4c-db97102e3627")
-	)
-	(wire
-		(pts
-			(xy 233.68 135.89) (xy 224.79 135.89)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "2e97d67b-a728-4890-8fc2-b6bc9f1be1b8")
 	)
 	(wire
 		(pts
@@ -1742,16 +1538,6 @@
 			(type default)
 		)
 		(uuid "36ef46db-e892-4dbf-8a22-0b6626d9f5d4")
-	)
-	(wire
-		(pts
-			(xy 236.22 77.47) (xy 224.79 77.47)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "3a54b6ec-3b35-4d68-a6ef-372bf84d4aa2")
 	)
 	(wire
 		(pts
@@ -1865,7 +1651,7 @@
 	)
 	(wire
 		(pts
-			(xy 293.37 90.17) (xy 303.53 90.17)
+			(xy 284.48 90.17) (xy 303.53 90.17)
 		)
 		(stroke
 			(width 0)
@@ -1922,16 +1708,6 @@
 			(type default)
 		)
 		(uuid "6e4891ab-0228-4f9a-a74c-fe376030b502")
-	)
-	(wire
-		(pts
-			(xy 233.68 147.32) (xy 233.68 156.21)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "6e866136-20f5-45ae-a027-fcff0924a570")
 	)
 	(wire
 		(pts
@@ -2135,7 +1911,7 @@
 	)
 	(wire
 		(pts
-			(xy 255.27 90.17) (xy 267.97 90.17)
+			(xy 255.27 90.17) (xy 276.86 90.17)
 		)
 		(stroke
 			(width 0)
@@ -2162,26 +1938,6 @@
 			(type default)
 		)
 		(uuid "cd4118a3-05bf-4fe9-92b7-762f2e1dbdc7")
-	)
-	(wire
-		(pts
-			(xy 236.22 49.53) (xy 250.19 49.53)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "cdac5ba4-8a43-4fc7-957d-be040d015442")
-	)
-	(wire
-		(pts
-			(xy 236.22 68.58) (xy 236.22 77.47)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "d10b04ad-feed-4189-9c7c-700eccf613c2")
 	)
 	(wire
 		(pts
@@ -2295,26 +2051,6 @@
 	)
 	(wire
 		(pts
-			(xy 233.68 139.7) (xy 233.68 135.89)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "f0be967a-e4b9-4546-9ac6-0f6f402cbbb2")
-	)
-	(wire
-		(pts
-			(xy 236.22 49.53) (xy 236.22 60.96)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "f56a9bb9-9461-439e-8927-d4f0db8b4b49")
-	)
-	(wire
-		(pts
 			(xy 40.64 156.21) (xy 55.88 156.21)
 		)
 		(stroke
@@ -2332,16 +2068,6 @@
 			(type default)
 		)
 		(uuid "f9ec2242-d7e0-44be-91ec-58147ed73090")
-	)
-	(wire
-		(pts
-			(xy 250.19 156.21) (xy 233.68 156.21)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "fb0ec699-04ad-43a2-b08a-7abf726c24ce")
 	)
 	(wire
 		(pts
@@ -2578,7 +2304,7 @@
 				)
 			)
 		)
-		(property "Value" "220nF X7R"
+		(property "Value" "150nF X7R"
 			(at 63.5 151.13 90)
 			(effects
 				(font
@@ -2595,7 +2321,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://www.yageo.com/upload/media/product/productsearch/datasheet/mlcc/UPY-GPHC_X7R_6.3V-to-250V_24.pdf"
 			(at 63.5 156.21 0)
 			(effects
 				(font
@@ -2606,6 +2332,15 @@
 		)
 		(property "Description" "Unpolarized capacitor"
 			(at 63.5 156.21 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "PN" "CC0603JRX7R9BB154"
+			(at 63.5 156.21 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2711,74 +2446,6 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:D_Schottky")
-		(at 181.61 55.88 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "1674ac08-0f12-46ea-97a6-7c896d653f84")
-		(property "Reference" "D12"
-			(at 181.2925 49.53 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "D_Schottky"
-			(at 181.2925 52.07 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 181.61 55.88 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 181.61 55.88 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Schottky diode"
-			(at 181.61 55.88 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "2"
-			(uuid "2a179d91-d184-4ac5-b425-24bfdb287670")
-		)
-		(pin "1"
-			(uuid "0f0a5ac2-d0c5-411e-b4e7-f87fe2a3aeb3")
-		)
-		(instances
-			(project "battery_protector"
-				(path "/b2975477-3b95-446c-b662-4cca32764c73/60172fae-36a9-4c2c-a77c-3b2f4e907501"
-					(reference "D12")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "power:GND")
 		(at 119.38 165.1 0)
 		(unit 1)
@@ -2840,76 +2507,6 @@
 			(project "Battery_Protector"
 				(path "/b2975477-3b95-446c-b662-4cca32764c73/60172fae-36a9-4c2c-a77c-3b2f4e907501"
 					(reference "#PWR012")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:D_Zener")
-		(at 236.22 64.77 270)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "26b1ceb0-6ef7-4d8c-bc03-2fc4baa691c5")
-		(property "Reference" "D22"
-			(at 238.76 63.4999 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "D_Zener"
-			(at 238.76 66.0399 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" ""
-			(at 236.22 64.77 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 236.22 64.77 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Zener diode"
-			(at 236.22 64.77 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "2"
-			(uuid "991737e0-d88a-430a-830d-5705dac86b4e")
-		)
-		(pin "1"
-			(uuid "5d4cd85c-d783-48e7-9255-7b2fd01852e3")
-		)
-		(instances
-			(project "battery_protector"
-				(path "/b2975477-3b95-446c-b662-4cca32764c73/60172fae-36a9-4c2c-a77c-3b2f4e907501"
-					(reference "D22")
 					(unit 1)
 				)
 			)
@@ -2984,7 +2581,7 @@
 	)
 	(symbol
 		(lib_id "Device:R")
-		(at 289.56 90.17 270)
+		(at 280.67 90.17 270)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -2993,7 +2590,7 @@
 		(fields_autoplaced yes)
 		(uuid "283aaaf9-6276-4065-8fe6-7878852fb61f")
 		(property "Reference" "R42"
-			(at 289.56 83.82 90)
+			(at 280.67 83.82 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3001,7 +2598,7 @@
 			)
 		)
 		(property "Value" "1k"
-			(at 289.56 86.36 90)
+			(at 280.67 86.36 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3009,7 +2606,7 @@
 			)
 		)
 		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
-			(at 289.56 88.392 90)
+			(at 280.67 88.392 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3018,7 +2615,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 289.56 90.17 0)
+			(at 280.67 90.17 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3027,7 +2624,7 @@
 			)
 		)
 		(property "Description" "Resistor"
-			(at 289.56 90.17 0)
+			(at 280.67 90.17 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3117,225 +2714,6 @@
 		)
 	)
 	(symbol
-		(lib_id "custom_symbols:SQJQ184ER")
-		(at 247.65 130.81 90)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "54550f4d-2638-40dc-b32b-aa4564e87e9d")
-		(property "Reference" "Q4"
-			(at 250.19 115.57 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "SQJQ184ER"
-			(at 250.19 118.11 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "custom_footprints:SQJQ184ER"
-			(at 247.65 130.81 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "https://www.vishay.com/docs/71298/sqjq184er.pdf"
-			(at 247.65 130.81 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Automotive N-Channel 80 V (D-S) 175 °C MOSFET"
-			(at 247.65 130.81 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "46a650b8-b235-49e5-a187-092e4e2d3e84")
-		)
-		(pin "2"
-			(uuid "0b51edbe-9795-4abe-9fba-5193e1b6f379")
-		)
-		(pin "3"
-			(uuid "edc9e47e-fb4b-49f8-9f22-2b52b5b1c4c2")
-		)
-		(instances
-			(project "battery_protector"
-				(path "/b2975477-3b95-446c-b662-4cca32764c73/60172fae-36a9-4c2c-a77c-3b2f4e907501"
-					(reference "Q4")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:D_Schottky")
-		(at 177.8 162.56 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "57de8eb9-550f-4898-9eeb-95aee541c704")
-		(property "Reference" "D9"
-			(at 177.4825 156.21 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "D_Schottky"
-			(at 177.4825 158.75 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 177.8 162.56 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 177.8 162.56 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Schottky diode"
-			(at 177.8 162.56 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "2"
-			(uuid "43a238da-d240-4a20-acdc-e5a7d51159ab")
-		)
-		(pin "1"
-			(uuid "1ffded2c-7ca5-4400-b26e-62664c16693a")
-		)
-		(instances
-			(project ""
-				(path "/b2975477-3b95-446c-b662-4cca32764c73/3c7201c3-3cb4-4689-bd07-73639f0d174a"
-					(reference "D10")
-					(unit 1)
-				)
-				(path "/b2975477-3b95-446c-b662-4cca32764c73/60172fae-36a9-4c2c-a77c-3b2f4e907501"
-					(reference "D9")
-					(unit 1)
-				)
-				(path "/b2975477-3b95-446c-b662-4cca32764c73/b4114c58-5862-440e-b7bf-85e61f2bb435"
-					(reference "D12")
-					(unit 1)
-				)
-				(path "/b2975477-3b95-446c-b662-4cca32764c73/de1325c4-0edb-4a9a-bc0f-47e138764fec"
-					(reference "D11")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:D_Schottky")
-		(at 271.78 90.17 180)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "5d99a847-9374-4baa-ae74-87ea8b83a83b")
-		(property "Reference" "D11"
-			(at 272.0975 83.82 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "SMD110PL-TP"
-			(at 272.0975 86.36 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "Diode_SMD:D_SOD-123F"
-			(at 271.78 90.17 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "https://www.mccsemi.com/pdf/Products/SMD110PL-SMD1200PL(SOD-123FL).pdf"
-			(at 271.78 90.17 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Schottky diode"
-			(at 271.78 90.17 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "177fde0e-7e3b-4f1f-9ebb-994d8f1f55a5")
-		)
-		(pin "2"
-			(uuid "e4796181-9f49-46b7-83bd-16b2a56be713")
-		)
-		(instances
-			(project "battery_protector"
-				(path "/b2975477-3b95-446c-b662-4cca32764c73/60172fae-36a9-4c2c-a77c-3b2f4e907501"
-					(reference "D11")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "Device:R")
 		(at 173.99 43.18 270)
 		(unit 1)
@@ -3353,7 +2731,7 @@
 				)
 			)
 		)
-		(property "Value" "10"
+		(property "Value" "100"
 			(at 173.99 39.37 90)
 			(effects
 				(font
@@ -3632,7 +3010,7 @@
 				)
 			)
 		)
-		(property "Value" "10"
+		(property "Value" "100"
 			(at 170.18 146.05 90)
 			(effects
 				(font
@@ -3677,6 +3055,77 @@
 			(project "Battery_Protector"
 				(path "/b2975477-3b95-446c-b662-4cca32764c73/60172fae-36a9-4c2c-a77c-3b2f4e907501"
 					(reference "R21")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "custom_symbols:SQJQ184ER")
+		(at 252.73 130.81 270)
+		(mirror x)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "a9c97cc5-3207-4e17-9a51-0072111bbf3c")
+		(property "Reference" "Q4"
+			(at 250.19 115.57 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "SQJQ184ER"
+			(at 250.19 118.11 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "custom_footprints:SQJQ184ER"
+			(at 252.73 130.81 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://www.vishay.com/docs/71298/sqjq184er.pdf"
+			(at 252.73 130.81 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Automotive N-Channel 80 V (D-S) 175 °C MOSFET"
+			(at 252.73 130.81 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "4b5dcc66-261e-4fe3-957a-ccaad41e41d6")
+		)
+		(pin "2"
+			(uuid "f9cdde66-1e5c-4114-a58d-25d22b8ae8bf")
+		)
+		(pin "3"
+			(uuid "5e9e1253-229f-47fc-a736-d331fd4d4962")
+		)
+		(instances
+			(project "battery_protector"
+				(path "/b2975477-3b95-446c-b662-4cca32764c73/60172fae-36a9-4c2c-a77c-3b2f4e907501"
+					(reference "Q4")
 					(unit 1)
 				)
 			)
@@ -3781,7 +3230,7 @@
 				)
 			)
 		)
-		(property "Value" "1m 1%"
+		(property "Value" "1m 1% 3W"
 			(at 63.5 118.11 90)
 			(effects
 				(font
@@ -3789,7 +3238,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Resistor_SMD:R_2512_6332Metric"
+		(property "Footprint" "custom_footprints:WSK12161L000FEA"
 			(at 63.5 120.142 90)
 			(effects
 				(font
@@ -3798,7 +3247,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "https://mm.digikey.com/Volume0/opasdata/d220001/medias/docus/856/SCMM2512S5_Series.pdf"
+		(property "Datasheet" "https://www.vishay.com/docs/30189/wsk1216.pdf"
 			(at 63.5 121.92 0)
 			(effects
 				(font
@@ -3816,7 +3265,7 @@
 				(hide yes)
 			)
 		)
-		(property "PN" "SCMM2512S5-R001F"
+		(property "PN" "WSK12161L000FEA"
 			(at 63.5 121.92 90)
 			(effects
 				(font
@@ -3935,77 +3384,6 @@
 		)
 	)
 	(symbol
-		(lib_id "custom_symbols:SQJQ184ER")
-		(at 252.73 81.28 270)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "d2d33ae8-0c08-4687-bda4-adf4298c7a69")
-		(property "Reference" "Q6"
-			(at 250.19 93.98 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "SQJQ184ER"
-			(at 250.19 96.52 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "custom_footprints:SQJQ184ER"
-			(at 252.73 81.28 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "https://www.vishay.com/docs/71298/sqjq184er.pdf"
-			(at 252.73 81.28 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Automotive N-Channel 80 V (D-S) 175 °C MOSFET"
-			(at 252.73 81.28 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "b16116b8-1565-4fe7-8912-068719d9986b")
-		)
-		(pin "2"
-			(uuid "82beed3a-eedf-48c6-b5ea-a4f71c69b96b")
-		)
-		(pin "3"
-			(uuid "590c21cf-980b-4489-a9ce-83861b47a73f")
-		)
-		(instances
-			(project "battery_protector"
-				(path "/b2975477-3b95-446c-b662-4cca32764c73/60172fae-36a9-4c2c-a77c-3b2f4e907501"
-					(reference "Q6")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "Device:R")
 		(at 162.56 162.56 270)
 		(unit 1)
@@ -4023,7 +3401,7 @@
 				)
 			)
 		)
-		(property "Value" "R"
+		(property "Value" "10"
 			(at 162.56 158.75 90)
 			(effects
 				(font
@@ -4031,7 +3409,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
 			(at 162.56 160.782 90)
 			(effects
 				(font
@@ -4068,88 +3446,6 @@
 			(project "Battery_Protector"
 				(path "/b2975477-3b95-446c-b662-4cca32764c73/60172fae-36a9-4c2c-a77c-3b2f4e907501"
 					(reference "R25")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:D_Zener")
-		(at 233.68 143.51 90)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "d900d90f-e3bd-470c-87fb-6691d6d03f86")
-		(property "Reference" "D21"
-			(at 236.22 142.2399 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(property "Value" "D_Zener"
-			(at 236.22 144.7799 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(property "Footprint" ""
-			(at 233.68 143.51 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 233.68 143.51 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Zener diode"
-			(at 233.68 143.51 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "2"
-			(uuid "980b0916-e708-4d40-bd46-7a7cd16806dd")
-		)
-		(pin "1"
-			(uuid "49021ed6-0d76-4c05-bc8f-4e163922b9dc")
-		)
-		(instances
-			(project ""
-				(path "/b2975477-3b95-446c-b662-4cca32764c73/3c7201c3-3cb4-4689-bd07-73639f0d174a"
-					(reference "D22")
-					(unit 1)
-				)
-				(path "/b2975477-3b95-446c-b662-4cca32764c73/60172fae-36a9-4c2c-a77c-3b2f4e907501"
-					(reference "D21")
-					(unit 1)
-				)
-				(path "/b2975477-3b95-446c-b662-4cca32764c73/b4114c58-5862-440e-b7bf-85e61f2bb435"
-					(reference "D24")
-					(unit 1)
-				)
-				(path "/b2975477-3b95-446c-b662-4cca32764c73/de1325c4-0edb-4a9a-bc0f-47e138764fec"
-					(reference "D23")
 					(unit 1)
 				)
 			)
@@ -4216,6 +3512,74 @@
 			(project "battery_protector"
 				(path "/b2975477-3b95-446c-b662-4cca32764c73/60172fae-36a9-4c2c-a77c-3b2f4e907501"
 					(reference "#PWR053")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:D_Schottky")
+		(at 181.61 55.88 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "dd74227e-0440-4a78-b898-e4b34796b341")
+		(property "Reference" "D27"
+			(at 181.2925 49.53 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "STPS3L60U"
+			(at 181.2925 52.07 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "custom_footprints:STPS3L60U"
+			(at 181.61 55.88 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 181.61 55.88 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Schottky diode"
+			(at 181.61 55.88 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "89697fec-0404-472d-9b77-82deb2b92288")
+		)
+		(pin "1"
+			(uuid "d5514577-73f8-418b-a5fb-e75150fd754a")
+		)
+		(instances
+			(project "battery_protector"
+				(path "/b2975477-3b95-446c-b662-4cca32764c73/60172fae-36a9-4c2c-a77c-3b2f4e907501"
+					(reference "D27")
 					(unit 1)
 				)
 			)
@@ -4375,7 +3739,7 @@
 				)
 			)
 		)
-		(property "Value" "R"
+		(property "Value" "10"
 			(at 166.37 52.07 90)
 			(effects
 				(font
@@ -4383,7 +3747,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
 			(at 166.37 54.102 90)
 			(effects
 				(font
@@ -4420,6 +3784,145 @@
 			(project "battery_protector"
 				(path "/b2975477-3b95-446c-b662-4cca32764c73/60172fae-36a9-4c2c-a77c-3b2f4e907501"
 					(reference "R43")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:D_Schottky")
+		(at 177.8 162.56 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "fa698af1-c299-41dc-a343-66fb2f9c4e6e")
+		(property "Reference" "D26"
+			(at 177.4825 156.21 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "STPS3L60U"
+			(at 177.4825 158.75 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "custom_footprints:STPS3L60U"
+			(at 177.8 162.56 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 177.8 162.56 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Schottky diode"
+			(at 177.8 162.56 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "9f7e8a08-59ea-445e-a7f1-639241c3757d")
+		)
+		(pin "1"
+			(uuid "342934b2-19ab-454e-b71e-1d134be88ade")
+		)
+		(instances
+			(project "battery_protector"
+				(path "/b2975477-3b95-446c-b662-4cca32764c73/60172fae-36a9-4c2c-a77c-3b2f4e907501"
+					(reference "D26")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "custom_symbols:SQJQ184ER")
+		(at 247.65 81.28 90)
+		(mirror x)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "fab5e4a9-24f7-43d5-b11a-31dab644f4c6")
+		(property "Reference" "Q6"
+			(at 250.19 96.52 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "SQJQ184ER"
+			(at 250.19 93.98 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "custom_footprints:SQJQ184ER"
+			(at 247.65 81.28 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://www.vishay.com/docs/71298/sqjq184er.pdf"
+			(at 247.65 81.28 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Automotive N-Channel 80 V (D-S) 175 °C MOSFET"
+			(at 247.65 81.28 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "ec6534e5-0b2a-4e7a-8c9b-ff02132ee98e")
+		)
+		(pin "2"
+			(uuid "f64bf28e-faa0-4af9-92bf-fd305e16790d")
+		)
+		(pin "3"
+			(uuid "5e59938a-2afa-41a3-a82f-ef06be9f6dc2")
+		)
+		(instances
+			(project "battery_protector"
+				(path "/b2975477-3b95-446c-b662-4cca32764c73/60172fae-36a9-4c2c-a77c-3b2f4e907501"
+					(reference "Q6")
 					(unit 1)
 				)
 			)
