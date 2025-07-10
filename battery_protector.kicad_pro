@@ -627,10 +627,6 @@
     [
       "b4114c58-5862-440e-b7bf-85e61f2bb435",
       "GateDriver"
-    ],
-    [
-      "b7e2baeb-974f-4710-92fe-458427da830c",
-      "USB_PD"
     ]
   ],
   "text_variables": {}

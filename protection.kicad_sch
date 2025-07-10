@@ -1203,6 +1203,26 @@
 		)
 		(uuid "a09a1075-e97e-4cae-b0ae-a12399c66016")
 	)
+	(text_box "Due to the intrinsic inductance of the shunt leads, we need an RC snubber circuit to zero the reactance (resonance)\n\nR_shunt/L = 1/RC -> C=150nF"
+		(exclude_from_sim no)
+		(at 33.02 180.34 0)
+		(size 46.99 13.97)
+		(margins 0.9525 0.9525 0.9525 0.9525)
+		(stroke
+			(width 0)
+			(type solid)
+		)
+		(fill
+			(type none)
+		)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left top)
+		)
+		(uuid "d3c728a2-75f3-41bb-b9a7-31651f13d0cb")
+	)
 	(junction
 		(at 55.88 156.21)
 		(diameter 0)
@@ -2818,7 +2838,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "https://www.mccsemi.com/pdf/Products/SMD110PL-SMD1200PL(SOD-123FL).pdf"
+		(property "Datasheet" "https://www.vishay.com/docs/88941/v30100s.pdf"
 			(at 361.95 140.97 0)
 			(effects
 				(font
@@ -2923,13 +2943,13 @@
 	)
 	(symbol
 		(lib_id "custom_symbols:SQJQ184ER")
-		(at 201.93 81.28 270)
+		(at 196.85 81.28 90)
+		(mirror x)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(fields_autoplaced yes)
 		(uuid "8a313fcb-84e5-4f11-8151-73205123e2ef")
 		(property "Reference" "Q5"
 			(at 199.39 93.98 90)
@@ -2948,7 +2968,7 @@
 			)
 		)
 		(property "Footprint" "custom_footprints:SQJQ184ER"
-			(at 201.93 81.28 0)
+			(at 196.85 81.28 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2957,7 +2977,7 @@
 			)
 		)
 		(property "Datasheet" "https://www.vishay.com/docs/71298/sqjq184er.pdf"
-			(at 201.93 81.28 0)
+			(at 196.85 81.28 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2966,7 +2986,7 @@
 			)
 		)
 		(property "Description" "Automotive N-Channel 80 V (D-S) 175 °C MOSFET"
-			(at 201.93 81.28 0)
+			(at 196.85 81.28 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3859,8 +3879,7 @@
 	)
 	(symbol
 		(lib_id "custom_symbols:SQJQ184ER")
-		(at 247.65 81.28 90)
-		(mirror x)
+		(at 252.73 81.28 270)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -3884,7 +3903,7 @@
 			)
 		)
 		(property "Footprint" "custom_footprints:SQJQ184ER"
-			(at 247.65 81.28 0)
+			(at 252.73 81.28 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3893,7 +3912,7 @@
 			)
 		)
 		(property "Datasheet" "https://www.vishay.com/docs/71298/sqjq184er.pdf"
-			(at 247.65 81.28 0)
+			(at 252.73 81.28 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3902,7 +3921,7 @@
 			)
 		)
 		(property "Description" "Automotive N-Channel 80 V (D-S) 175 °C MOSFET"
-			(at 247.65 81.28 0)
+			(at 252.73 81.28 0)
 			(effects
 				(font
 					(size 1.27 1.27)
