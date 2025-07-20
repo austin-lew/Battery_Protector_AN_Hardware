@@ -298,6 +298,182 @@
 			)
 			(embedded_fonts no)
 		)
+		(symbol "Device:D_Schottky_AAK"
+			(pin_names
+				(offset 0)
+				(hide yes)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "D"
+				(at 0 2.54 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "D_Schottky_AAK"
+				(at 0 -2.54 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "~"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "Schottky diode, anode on pins 1 and 2"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "diode Schottky SCHDPAK"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_fp_filters" "TO-???* *_Diode_* *SingleDiode* D_*"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "D_Schottky_AAK_0_1"
+				(polyline
+					(pts
+						(xy -1.905 0.635) (xy -1.905 1.27) (xy -1.27 1.27) (xy -1.27 -1.27) (xy -0.635 -1.27) (xy -0.635 -0.635)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 1.27 1.27) (xy 1.27 -1.27) (xy -1.27 0) (xy 1.27 1.27)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(circle
+					(center 2.54 0)
+					(radius 0.254)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type outline)
+					)
+				)
+				(polyline
+					(pts
+						(xy 3.81 2.54) (xy 2.54 2.54) (xy 2.54 0) (xy -1.27 0)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "D_Schottky_AAK_1_1"
+				(pin passive line
+					(at -3.81 0 0)
+					(length 2.54)
+					(name "K"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "3"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 5.08 2.54 180)
+					(length 2.54)
+					(name "A"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 5.08 0 180)
+					(length 2.54)
+					(name "A"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
 		(symbol "Device:D_TVS"
 			(pin_numbers
 				(hide yes)
@@ -1450,6 +1626,10 @@
 		(color 0 0 0 0)
 		(uuid "e0bc68c1-c324-4125-a4f8-72894db9b1b9")
 	)
+	(no_connect
+		(at 361.95 146.05)
+		(uuid "a319c77d-2e55-4165-a095-5f84ce4ebb1e")
+	)
 	(wire
 		(pts
 			(xy 224.79 121.92) (xy 224.79 135.89)
@@ -1522,6 +1702,16 @@
 	)
 	(wire
 		(pts
+			(xy 364.49 146.05) (xy 364.49 165.1)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "170702c8-0364-480b-a4da-8fd4c1614a57")
+	)
+	(wire
+		(pts
 			(xy 322.58 121.92) (xy 322.58 137.16)
 		)
 		(stroke
@@ -1549,16 +1739,6 @@
 			(type default)
 		)
 		(uuid "20265e81-2663-440b-ba52-f1aee7de2775")
-	)
-	(wire
-		(pts
-			(xy 361.95 144.78) (xy 361.95 165.1)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "25904ecb-07be-4a38-af07-17b69b1c05a6")
 	)
 	(wire
 		(pts
@@ -2691,7 +2871,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 361.95 165.1 0)
+		(at 364.49 165.1 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -2700,7 +2880,7 @@
 		(fields_autoplaced yes)
 		(uuid "2779ce3e-4fb3-4520-adfd-a266e8967611")
 		(property "Reference" "#PWR0120"
-			(at 361.95 171.45 0)
+			(at 364.49 171.45 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2709,7 +2889,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 361.95 170.18 0)
+			(at 364.49 170.18 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2718,7 +2898,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 361.95 165.1 0)
+			(at 364.49 165.1 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2727,7 +2907,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 361.95 165.1 0)
+			(at 364.49 165.1 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2736,7 +2916,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 361.95 165.1 0)
+			(at 364.49 165.1 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3019,76 +3199,6 @@
 			(project "battery_protector"
 				(path "/b2975477-3b95-446c-b662-4cca32764c73/60172fae-36a9-4c2c-a77c-3b2f4e907501"
 					(reference "R11")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:D_Schottky")
-		(at 361.95 140.97 270)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "7f434414-7f70-4677-b862-254374dc0c23")
-		(property "Reference" "D9"
-			(at 364.49 139.3824 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "VB30100S-E3/8W"
-			(at 364.49 141.9224 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "custom_footprints:VB30100S-E38W"
-			(at 361.95 140.97 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "https://www.vishay.com/docs/88941/v30100s.pdf"
-			(at 361.95 140.97 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Schottky diode"
-			(at 361.95 140.97 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "589655b6-325a-4f91-8e47-c7bbace27a17")
-		)
-		(pin "2"
-			(uuid "5890853c-df8c-40e4-9a24-fd5d061b6531")
-		)
-		(instances
-			(project "battery_protector"
-				(path "/b2975477-3b95-446c-b662-4cca32764c73/60172fae-36a9-4c2c-a77c-3b2f4e907501"
-					(reference "D9")
 					(unit 1)
 				)
 			)
@@ -3621,6 +3731,79 @@
 				)
 				(path "/b2975477-3b95-446c-b662-4cca32764c73/de1325c4-0edb-4a9a-bc0f-47e138764fec"
 					(reference "D?")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:D_Schottky_AAK")
+		(at 361.95 140.97 270)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "cffe19e6-2df4-42eb-9ffc-7b41b5f470da")
+		(property "Reference" "D15"
+			(at 365.76 140.5889 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "D_Schottky_AAK"
+			(at 365.76 143.1289 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "custom_footprints:VB30100S-E38W"
+			(at 361.95 140.97 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://www.vishay.com/docs/88941/v30100s.pdf"
+			(at 361.95 140.97 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Schottky diode, anode on pins 1 and 2"
+			(at 361.95 140.97 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "9b1e6367-f85f-461c-b830-75f46475218b")
+		)
+		(pin "2"
+			(uuid "6ed4eea0-732e-4874-a6f6-9d8e1a8107ad")
+		)
+		(pin "3"
+			(uuid "e7bd6050-0a66-45b6-93d7-5d7fcb323cce")
+		)
+		(instances
+			(project ""
+				(path "/b2975477-3b95-446c-b662-4cca32764c73/60172fae-36a9-4c2c-a77c-3b2f4e907501"
+					(reference "D15")
 					(unit 1)
 				)
 			)
