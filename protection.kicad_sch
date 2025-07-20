@@ -1070,6 +1070,107 @@
 			)
 			(embedded_fonts no)
 		)
+		(symbol "power:PWR_FLAG"
+			(power)
+			(pin_numbers
+				(hide yes)
+			)
+			(pin_names
+				(offset 0)
+				(hide yes)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "#FLG"
+				(at 0 1.905 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Value" "PWR_FLAG"
+				(at 0 3.81 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "~"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "Special symbol for telling ERC where power comes from"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "flag power"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "PWR_FLAG_0_0"
+				(pin power_out line
+					(at 0 0 90)
+					(length 0)
+					(name "~"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(symbol "PWR_FLAG_0_1"
+				(polyline
+					(pts
+						(xy 0 0) (xy 0 1.27) (xy -1.016 1.905) (xy 0 2.54) (xy 1.016 1.905) (xy 0 1.27)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
 	)
 	(rectangle
 		(start 142.24 139.7)
@@ -1851,16 +1952,6 @@
 	)
 	(wire
 		(pts
-			(xy 361.95 120.65) (xy 361.95 121.92)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "96c5adee-af2d-4f69-8758-b041b5738118")
-	)
-	(wire
-		(pts
 			(xy 55.88 121.92) (xy 59.69 121.92)
 		)
 		(stroke
@@ -2175,7 +2266,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "003f6c30-00f6-45a8-b38f-a86a70eb872c")
-		(property "Reference" "R13"
+		(property "Reference" "R7"
 			(at 73.66 139.6999 0)
 			(effects
 				(font
@@ -2229,7 +2320,73 @@
 		(instances
 			(project "Battery_Protector"
 				(path "/b2975477-3b95-446c-b662-4cca32764c73/60172fae-36a9-4c2c-a77c-3b2f4e907501"
-					(reference "R13")
+					(reference "R7")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:PWR_FLAG")
+		(at 402.59 118.11 180)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "073b7e4e-9c3f-4d4c-8404-74546d1245c2")
+		(property "Reference" "#FLG0103"
+			(at 402.59 120.015 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "PWR_FLAG"
+			(at 402.59 123.19 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 402.59 118.11 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 402.59 118.11 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Special symbol for telling ERC where power comes from"
+			(at 402.59 118.11 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "19008e49-92ab-4974-bcda-d6573a2af8f0")
+		)
+		(instances
+			(project ""
+				(path "/b2975477-3b95-446c-b662-4cca32764c73/60172fae-36a9-4c2c-a77c-3b2f4e907501"
+					(reference "#FLG0103")
 					(unit 1)
 				)
 			)
@@ -2245,7 +2402,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "07f0aa39-397e-470d-a5c5-8c48396b73aa")
-		(property "Reference" "Q1"
+		(property "Reference" "Q2"
 			(at 199.39 115.57 90)
 			(effects
 				(font
@@ -2300,7 +2457,7 @@
 		(instances
 			(project ""
 				(path "/b2975477-3b95-446c-b662-4cca32764c73/60172fae-36a9-4c2c-a77c-3b2f4e907501"
-					(reference "Q1")
+					(reference "Q2")
 					(unit 1)
 				)
 			)
@@ -2377,7 +2534,7 @@
 		(instances
 			(project ""
 				(path "/b2975477-3b95-446c-b662-4cca32764c73/3c7201c3-3cb4-4689-bd07-73639f0d174a"
-					(reference "C2")
+					(reference "C?")
 					(unit 1)
 				)
 				(path "/b2975477-3b95-446c-b662-4cca32764c73/60172fae-36a9-4c2c-a77c-3b2f4e907501"
@@ -2385,11 +2542,11 @@
 					(unit 1)
 				)
 				(path "/b2975477-3b95-446c-b662-4cca32764c73/b4114c58-5862-440e-b7bf-85e61f2bb435"
-					(reference "C4")
+					(reference "C?")
 					(unit 1)
 				)
 				(path "/b2975477-3b95-446c-b662-4cca32764c73/de1325c4-0edb-4a9a-bc0f-47e138764fec"
-					(reference "C3")
+					(reference "C?")
 					(unit 1)
 				)
 			)
@@ -2405,7 +2562,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "0dbb4656-98e7-414a-8452-a92d17407ff0")
-		(property "Reference" "R9"
+		(property "Reference" "R5"
 			(at 58.42 139.6999 0)
 			(effects
 				(font
@@ -2459,7 +2616,7 @@
 		(instances
 			(project "Battery_Protector"
 				(path "/b2975477-3b95-446c-b662-4cca32764c73/60172fae-36a9-4c2c-a77c-3b2f4e907501"
-					(reference "R9")
+					(reference "R5")
 					(unit 1)
 				)
 			)
@@ -2475,7 +2632,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "263cf621-9a0a-472e-bcae-4f91f9c213a2")
-		(property "Reference" "#PWR012"
+		(property "Reference" "#PWR0118"
 			(at 119.38 171.45 0)
 			(effects
 				(font
@@ -2526,7 +2683,7 @@
 		(instances
 			(project "Battery_Protector"
 				(path "/b2975477-3b95-446c-b662-4cca32764c73/60172fae-36a9-4c2c-a77c-3b2f4e907501"
-					(reference "#PWR012")
+					(reference "#PWR0118")
 					(unit 1)
 				)
 			)
@@ -2542,7 +2699,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "2779ce3e-4fb3-4520-adfd-a266e8967611")
-		(property "Reference" "#PWR018"
+		(property "Reference" "#PWR0120"
 			(at 361.95 171.45 0)
 			(effects
 				(font
@@ -2593,7 +2750,7 @@
 		(instances
 			(project "Battery_Protector"
 				(path "/b2975477-3b95-446c-b662-4cca32764c73/60172fae-36a9-4c2c-a77c-3b2f4e907501"
-					(reference "#PWR018")
+					(reference "#PWR0120")
 					(unit 1)
 				)
 			)
@@ -2609,7 +2766,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "283aaaf9-6276-4065-8fe6-7878852fb61f")
-		(property "Reference" "R42"
+		(property "Reference" "R14"
 			(at 280.67 83.82 90)
 			(effects
 				(font
@@ -2661,7 +2818,7 @@
 		(instances
 			(project "battery_protector"
 				(path "/b2975477-3b95-446c-b662-4cca32764c73/60172fae-36a9-4c2c-a77c-3b2f4e907501"
-					(reference "R42")
+					(reference "R14")
 					(unit 1)
 				)
 			)
@@ -2677,7 +2834,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "2bb1cc4f-0739-4b2e-ba37-0b398c93e5a6")
-		(property "Reference" "#PWR054"
+		(property "Reference" "#PWR0122"
 			(at 391.16 123.19 0)
 			(effects
 				(font
@@ -2727,7 +2884,73 @@
 		(instances
 			(project "battery_protector"
 				(path "/b2975477-3b95-446c-b662-4cca32764c73/60172fae-36a9-4c2c-a77c-3b2f4e907501"
-					(reference "#PWR054")
+					(reference "#PWR0122")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:+3V3")
+		(at 402.59 118.11 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "46cb8d01-fb2f-4f6a-b81d-693cf77d0713")
+		(property "Reference" "#PWR0123"
+			(at 402.59 121.92 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "LOAD+"
+			(at 402.59 113.03 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 402.59 118.11 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 402.59 118.11 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"+3V3\""
+			(at 402.59 118.11 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "806b42ba-ca40-4c78-87a0-f231af9d6cca")
+		)
+		(instances
+			(project "battery_protector"
+				(path "/b2975477-3b95-446c-b662-4cca32764c73/60172fae-36a9-4c2c-a77c-3b2f4e907501"
+					(reference "#PWR0123")
 					(unit 1)
 				)
 			)
@@ -2743,7 +2966,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "7099817b-8dc7-41dc-a83f-ff45cc094fda")
-		(property "Reference" "R44"
+		(property "Reference" "R11"
 			(at 173.99 36.83 90)
 			(effects
 				(font
@@ -2795,7 +3018,7 @@
 		(instances
 			(project "battery_protector"
 				(path "/b2975477-3b95-446c-b662-4cca32764c73/60172fae-36a9-4c2c-a77c-3b2f4e907501"
-					(reference "R44")
+					(reference "R11")
 					(unit 1)
 				)
 			)
@@ -2811,7 +3034,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "7f434414-7f70-4677-b862-254374dc0c23")
-		(property "Reference" "D13"
+		(property "Reference" "D9"
 			(at 364.49 139.3824 90)
 			(effects
 				(font
@@ -2865,7 +3088,7 @@
 		(instances
 			(project "battery_protector"
 				(path "/b2975477-3b95-446c-b662-4cca32764c73/60172fae-36a9-4c2c-a77c-3b2f4e907501"
-					(reference "D13")
+					(reference "D9")
 					(unit 1)
 				)
 			)
@@ -2881,7 +3104,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "8359a158-8980-4367-b112-4256219cee55")
-		(property "Reference" "D14"
+		(property "Reference" "D8"
 			(at 325.12 139.6999 90)
 			(effects
 				(font
@@ -2935,7 +3158,7 @@
 		(instances
 			(project "battery_protector"
 				(path "/b2975477-3b95-446c-b662-4cca32764c73/60172fae-36a9-4c2c-a77c-3b2f4e907501"
-					(reference "D14")
+					(reference "D8")
 					(unit 1)
 				)
 			)
@@ -2951,7 +3174,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "8a313fcb-84e5-4f11-8151-73205123e2ef")
-		(property "Reference" "Q5"
+		(property "Reference" "Q1"
 			(at 199.39 93.98 90)
 			(effects
 				(font
@@ -3006,7 +3229,7 @@
 		(instances
 			(project "battery_protector"
 				(path "/b2975477-3b95-446c-b662-4cca32764c73/60172fae-36a9-4c2c-a77c-3b2f4e907501"
-					(reference "Q5")
+					(reference "Q1")
 					(unit 1)
 				)
 			)
@@ -3022,7 +3245,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "9aef6059-a8ba-4f65-92d2-6a87d043134c")
-		(property "Reference" "R21"
+		(property "Reference" "R10"
 			(at 170.18 143.51 90)
 			(effects
 				(font
@@ -3074,7 +3297,7 @@
 		(instances
 			(project "Battery_Protector"
 				(path "/b2975477-3b95-446c-b662-4cca32764c73/60172fae-36a9-4c2c-a77c-3b2f4e907501"
-					(reference "R21")
+					(reference "R10")
 					(unit 1)
 				)
 			)
@@ -3160,7 +3383,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "ac599a5e-e9c7-4e54-8b1c-d2a8594e2911")
-		(property "Reference" "R29"
+		(property "Reference" "R13"
 			(at 227.33 142.2399 0)
 			(effects
 				(font
@@ -3214,19 +3437,19 @@
 		(instances
 			(project ""
 				(path "/b2975477-3b95-446c-b662-4cca32764c73/3c7201c3-3cb4-4689-bd07-73639f0d174a"
-					(reference "R30")
+					(reference "R?")
 					(unit 1)
 				)
 				(path "/b2975477-3b95-446c-b662-4cca32764c73/60172fae-36a9-4c2c-a77c-3b2f4e907501"
-					(reference "R29")
+					(reference "R13")
 					(unit 1)
 				)
 				(path "/b2975477-3b95-446c-b662-4cca32764c73/b4114c58-5862-440e-b7bf-85e61f2bb435"
-					(reference "R32")
+					(reference "R?")
 					(unit 1)
 				)
 				(path "/b2975477-3b95-446c-b662-4cca32764c73/de1325c4-0edb-4a9a-bc0f-47e138764fec"
-					(reference "R31")
+					(reference "R?")
 					(unit 1)
 				)
 			)
@@ -3242,7 +3465,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "b527692d-7687-4374-9c87-f8c4275b4947")
-		(property "Reference" "R5"
+		(property "Reference" "R6"
 			(at 63.5 115.57 90)
 			(effects
 				(font
@@ -3303,19 +3526,19 @@
 		(instances
 			(project ""
 				(path "/b2975477-3b95-446c-b662-4cca32764c73/3c7201c3-3cb4-4689-bd07-73639f0d174a"
-					(reference "R6")
+					(reference "R?")
 					(unit 1)
 				)
 				(path "/b2975477-3b95-446c-b662-4cca32764c73/60172fae-36a9-4c2c-a77c-3b2f4e907501"
-					(reference "R5")
+					(reference "R6")
 					(unit 1)
 				)
 				(path "/b2975477-3b95-446c-b662-4cca32764c73/b4114c58-5862-440e-b7bf-85e61f2bb435"
-					(reference "R8")
+					(reference "R?")
 					(unit 1)
 				)
 				(path "/b2975477-3b95-446c-b662-4cca32764c73/de1325c4-0edb-4a9a-bc0f-47e138764fec"
-					(reference "R7")
+					(reference "R?")
 					(unit 1)
 				)
 			)
@@ -3385,7 +3608,7 @@
 		(instances
 			(project ""
 				(path "/b2975477-3b95-446c-b662-4cca32764c73/3c7201c3-3cb4-4689-bd07-73639f0d174a"
-					(reference "D6")
+					(reference "D?")
 					(unit 1)
 				)
 				(path "/b2975477-3b95-446c-b662-4cca32764c73/60172fae-36a9-4c2c-a77c-3b2f4e907501"
@@ -3393,11 +3616,11 @@
 					(unit 1)
 				)
 				(path "/b2975477-3b95-446c-b662-4cca32764c73/b4114c58-5862-440e-b7bf-85e61f2bb435"
-					(reference "D8")
+					(reference "D?")
 					(unit 1)
 				)
 				(path "/b2975477-3b95-446c-b662-4cca32764c73/de1325c4-0edb-4a9a-bc0f-47e138764fec"
-					(reference "D7")
+					(reference "D?")
 					(unit 1)
 				)
 			)
@@ -3413,7 +3636,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "d74869b3-964b-4a67-b717-ccf7a0cb9daf")
-		(property "Reference" "R25"
+		(property "Reference" "R8"
 			(at 162.56 156.21 90)
 			(effects
 				(font
@@ -3465,7 +3688,7 @@
 		(instances
 			(project "Battery_Protector"
 				(path "/b2975477-3b95-446c-b662-4cca32764c73/60172fae-36a9-4c2c-a77c-3b2f4e907501"
-					(reference "R25")
+					(reference "R8")
 					(unit 1)
 				)
 			)
@@ -3481,7 +3704,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "db2caca0-7762-4346-9175-9e5d8828aeab")
-		(property "Reference" "#PWR053"
+		(property "Reference" "#PWR0119"
 			(at 39.37 121.92 0)
 			(effects
 				(font
@@ -3531,7 +3754,7 @@
 		(instances
 			(project "battery_protector"
 				(path "/b2975477-3b95-446c-b662-4cca32764c73/60172fae-36a9-4c2c-a77c-3b2f4e907501"
-					(reference "#PWR053")
+					(reference "#PWR0119")
 					(unit 1)
 				)
 			)
@@ -3547,7 +3770,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "dd74227e-0440-4a78-b898-e4b34796b341")
-		(property "Reference" "D27"
+		(property "Reference" "D7"
 			(at 181.2925 49.53 0)
 			(effects
 				(font
@@ -3599,7 +3822,7 @@
 		(instances
 			(project "battery_protector"
 				(path "/b2975477-3b95-446c-b662-4cca32764c73/60172fae-36a9-4c2c-a77c-3b2f4e907501"
-					(reference "D27")
+					(reference "D7")
 					(unit 1)
 				)
 			)
@@ -3615,7 +3838,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "e5827744-5243-47eb-89ef-6f01e49577ef")
-		(property "Reference" "#PWR017"
+		(property "Reference" "#PWR0121"
 			(at 322.58 171.45 0)
 			(effects
 				(font
@@ -3666,7 +3889,7 @@
 		(instances
 			(project "Battery_Protector"
 				(path "/b2975477-3b95-446c-b662-4cca32764c73/60172fae-36a9-4c2c-a77c-3b2f4e907501"
-					(reference "#PWR017")
+					(reference "#PWR0121")
 					(unit 1)
 				)
 			)
@@ -3681,7 +3904,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "f683508c-6e8e-443a-9bfc-5e9d5051c802")
-		(property "Reference" "R45"
+		(property "Reference" "R12"
 			(at 227.33 63.4999 0)
 			(effects
 				(font
@@ -3735,7 +3958,7 @@
 		(instances
 			(project "battery_protector"
 				(path "/b2975477-3b95-446c-b662-4cca32764c73/60172fae-36a9-4c2c-a77c-3b2f4e907501"
-					(reference "R45")
+					(reference "R12")
 					(unit 1)
 				)
 			)
@@ -3751,7 +3974,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "f94e0210-8e3d-4ee2-a900-3fb643fd89fb")
-		(property "Reference" "R43"
+		(property "Reference" "R9"
 			(at 166.37 49.53 90)
 			(effects
 				(font
@@ -3803,7 +4026,7 @@
 		(instances
 			(project "battery_protector"
 				(path "/b2975477-3b95-446c-b662-4cca32764c73/60172fae-36a9-4c2c-a77c-3b2f4e907501"
-					(reference "R43")
+					(reference "R9")
 					(unit 1)
 				)
 			)
@@ -3819,7 +4042,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "fa698af1-c299-41dc-a343-66fb2f9c4e6e")
-		(property "Reference" "D26"
+		(property "Reference" "D6"
 			(at 177.4825 156.21 0)
 			(effects
 				(font
@@ -3871,7 +4094,7 @@
 		(instances
 			(project "battery_protector"
 				(path "/b2975477-3b95-446c-b662-4cca32764c73/60172fae-36a9-4c2c-a77c-3b2f4e907501"
-					(reference "D26")
+					(reference "D6")
 					(unit 1)
 				)
 			)
@@ -3886,7 +4109,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "fab5e4a9-24f7-43d5-b11a-31dab644f4c6")
-		(property "Reference" "Q6"
+		(property "Reference" "Q3"
 			(at 250.19 96.52 90)
 			(effects
 				(font
@@ -3941,7 +4164,7 @@
 		(instances
 			(project "battery_protector"
 				(path "/b2975477-3b95-446c-b662-4cca32764c73/60172fae-36a9-4c2c-a77c-3b2f4e907501"
-					(reference "Q6")
+					(reference "Q3")
 					(unit 1)
 				)
 			)
