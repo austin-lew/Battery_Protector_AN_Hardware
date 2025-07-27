@@ -3000,7 +3000,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "2ED4820EMXUMA2"
+		(property "Datasheet" "https://www.infineon.com/assets/row/public/documents/10/49/infineon-2ed4820-em-datasheet-en.pdf?fileId=8ac78c8c7c72fb9a017c7f5a77c8145e"
 			(at 147.32 83.82 0)
 			(effects
 				(font
