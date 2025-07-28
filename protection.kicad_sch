@@ -1591,12 +1591,6 @@
 		(uuid "78c637ac-b348-4e5f-937b-f69b5fe10581")
 	)
 	(junction
-		(at 158.75 49.53)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "8b974bc4-c84f-4b12-980c-e95e7f8a5bd1")
-	)
-	(junction
 		(at 55.88 121.92)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -1619,12 +1613,6 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "dfe8d1f2-dd1c-4306-800c-17de4d13e25c")
-	)
-	(junction
-		(at 189.23 49.53)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "e0bc68c1-c324-4125-a4f8-72894db9b1b9")
 	)
 	(no_connect
 		(at 361.95 146.05)
@@ -1649,16 +1637,6 @@
 			(type default)
 		)
 		(uuid "0552fa64-8dfd-47c2-b36b-4376229e4aa9")
-	)
-	(wire
-		(pts
-			(xy 189.23 49.53) (xy 189.23 55.88)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "10cb8fa5-a4c2-4a66-ac87-7ed27db07a4f")
 	)
 	(wire
 		(pts
@@ -1752,16 +1730,6 @@
 	)
 	(wire
 		(pts
-			(xy 189.23 43.18) (xy 189.23 49.53)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "294bc3f2-856e-4742-a8b2-081302e32d58")
-	)
-	(wire
-		(pts
 			(xy 224.79 49.53) (xy 250.19 49.53)
 		)
 		(stroke
@@ -1802,7 +1770,7 @@
 	)
 	(wire
 		(pts
-			(xy 153.67 49.53) (xy 158.75 49.53)
+			(xy 153.67 49.53) (xy 170.18 49.53)
 		)
 		(stroke
 			(width 0)
@@ -1829,16 +1797,6 @@
 			(type default)
 		)
 		(uuid "3040a819-9c1f-4d57-8a6a-2e3c04f0d378")
-	)
-	(wire
-		(pts
-			(xy 158.75 49.53) (xy 158.75 55.88)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "36ef46db-e892-4dbf-8a22-0b6626d9f5d4")
 	)
 	(wire
 		(pts
@@ -1869,16 +1827,6 @@
 			(type default)
 		)
 		(uuid "40ad756a-9c92-43e4-84a7-39e96463043d")
-	)
-	(wire
-		(pts
-			(xy 170.18 43.18) (xy 158.75 43.18)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "411f6d29-28a2-4f8a-a31c-4251508b6038")
 	)
 	(wire
 		(pts
@@ -1982,36 +1930,6 @@
 	)
 	(wire
 		(pts
-			(xy 158.75 55.88) (xy 162.56 55.88)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "61dcf673-d0ff-4529-8cc3-9f16cd37963a")
-	)
-	(wire
-		(pts
-			(xy 189.23 49.53) (xy 199.39 49.53)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "62ac4f9b-1480-42a0-8291-5de5118d4407")
-	)
-	(wire
-		(pts
-			(xy 170.18 55.88) (xy 177.8 55.88)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "6e4891ab-0228-4f9a-a74c-fe376030b502")
-	)
-	(wire
-		(pts
 			(xy 322.58 121.92) (xy 361.95 121.92)
 		)
 		(stroke
@@ -2112,16 +2030,6 @@
 	)
 	(wire
 		(pts
-			(xy 158.75 43.18) (xy 158.75 49.53)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "91f76856-bb32-49d1-aaca-657dec0da183")
-	)
-	(wire
-		(pts
 			(xy 67.31 156.21) (xy 71.12 156.21)
 		)
 		(stroke
@@ -2152,16 +2060,6 @@
 	)
 	(wire
 		(pts
-			(xy 185.42 55.88) (xy 189.23 55.88)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "ad3b02d5-60d9-4226-8bf5-6d42a265b046")
-	)
-	(wire
-		(pts
 			(xy 204.47 121.92) (xy 224.79 121.92)
 		)
 		(stroke
@@ -2182,7 +2080,7 @@
 	)
 	(wire
 		(pts
-			(xy 189.23 43.18) (xy 177.8 43.18)
+			(xy 177.8 49.53) (xy 199.39 49.53)
 		)
 		(stroke
 			(width 0)
@@ -2962,7 +2860,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
+		(property "Footprint" "Resistor_SMD:R_1206_3216Metric"
 			(at 280.67 88.392 90)
 			(effects
 				(font
@@ -2971,7 +2869,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://www.susumu.co.jp/common/pdf/n_catalog_partition24_en.pdf"
 			(at 280.67 90.17 0)
 			(effects
 				(font
@@ -2980,7 +2878,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Resistor"
+		(property "Description" "HRG3216P-1001-D-T1 RES SMD 1K OHM 0.5% 1W 1206"
 			(at 280.67 90.17 0)
 			(effects
 				(font
@@ -3138,7 +3036,7 @@
 	)
 	(symbol
 		(lib_id "Device:R")
-		(at 173.99 43.18 270)
+		(at 173.99 49.53 270)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -3147,7 +3045,7 @@
 		(fields_autoplaced yes)
 		(uuid "7099817b-8dc7-41dc-a83f-ff45cc094fda")
 		(property "Reference" "R11"
-			(at 173.99 36.83 90)
+			(at 173.99 43.18 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3155,7 +3053,7 @@
 			)
 		)
 		(property "Value" "100"
-			(at 173.99 39.37 90)
+			(at 173.99 45.72 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3163,7 +3061,7 @@
 			)
 		)
 		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
-			(at 173.99 41.402 90)
+			(at 173.99 47.752 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3172,7 +3070,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 173.99 43.18 0)
+			(at 173.99 49.53 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3181,7 +3079,7 @@
 			)
 		)
 		(property "Description" "Resistor"
-			(at 173.99 43.18 0)
+			(at 173.99 49.53 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3567,13 +3465,13 @@
 	)
 	(symbol
 		(lib_id "Device:R")
-		(at 63.5 121.92 270)
+		(at 63.5 121.92 90)
+		(mirror x)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(fields_autoplaced yes)
 		(uuid "b527692d-7687-4374-9c87-f8c4275b4947")
 		(property "Reference" "R6"
 			(at 63.5 115.57 90)
@@ -3944,74 +3842,6 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:D_Schottky")
-		(at 181.61 55.88 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "dd74227e-0440-4a78-b898-e4b34796b341")
-		(property "Reference" "D7"
-			(at 181.2925 49.53 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "STPS3L60U"
-			(at 181.2925 52.07 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "custom_footprints:STPS3L60U"
-			(at 181.61 55.88 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 181.61 55.88 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Schottky diode"
-			(at 181.61 55.88 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "2"
-			(uuid "89697fec-0404-472d-9b77-82deb2b92288")
-		)
-		(pin "1"
-			(uuid "d5514577-73f8-418b-a5fb-e75150fd754a")
-		)
-		(instances
-			(project "battery_protector"
-				(path "/b2975477-3b95-446c-b662-4cca32764c73/60172fae-36a9-4c2c-a77c-3b2f4e907501"
-					(reference "D7")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "power:GND")
 		(at 322.58 165.1 0)
 		(unit 1)
@@ -4142,74 +3972,6 @@
 			(project "battery_protector"
 				(path "/b2975477-3b95-446c-b662-4cca32764c73/60172fae-36a9-4c2c-a77c-3b2f4e907501"
 					(reference "R12")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:R")
-		(at 166.37 55.88 270)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "f94e0210-8e3d-4ee2-a900-3fb643fd89fb")
-		(property "Reference" "R9"
-			(at 166.37 49.53 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "10"
-			(at 166.37 52.07 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
-			(at 166.37 54.102 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 166.37 55.88 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Resistor"
-			(at 166.37 55.88 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "a7703435-cdf7-4668-9844-087c8be3cac4")
-		)
-		(pin "2"
-			(uuid "9b02ae83-c489-4c59-917c-a128681c75e3")
-		)
-		(instances
-			(project "battery_protector"
-				(path "/b2975477-3b95-446c-b662-4cca32764c73/60172fae-36a9-4c2c-a77c-3b2f4e907501"
-					(reference "R9")
 					(unit 1)
 				)
 			)
