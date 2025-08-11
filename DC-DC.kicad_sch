@@ -2669,6 +2669,17 @@
 			(embedded_fonts no)
 		)
 	)
+	(text "3.8V-6V -> 3.3V @ 600mA"
+		(exclude_from_sim no)
+		(at 342.138 166.624 0)
+		(effects
+			(font
+				(size 2.54 2.54)
+				(thickness 0.3175)
+			)
+		)
+		(uuid "09d775d6-af67-4058-8dbe-45fe22851822")
+	)
 	(text "ORing; prio +5V0_USB\nSwitches to +5V0_board IF:\n+5V0_USB < 1.0V and +5V0_board >= 1.6V"
 		(exclude_from_sim no)
 		(at 359.664 87.122 0)
@@ -2709,25 +2720,16 @@
 		)
 		(uuid "25eaf053-701d-4811-9d26-7e568c4f3b7a")
 	)
-	(text "UVLO (must do new calculations for the resistor values used here)"
+	(text "6V-80V -> 5V @ 2A"
 		(exclude_from_sim no)
-		(at 109.474 42.418 0)
+		(at 120.142 38.1 0)
 		(effects
 			(font
-				(size 1.27 1.27)
+				(size 2.54 2.54)
+				(thickness 0.3175)
 			)
 		)
 		(uuid "8981acde-1ea1-4933-b847-68c3101d051c")
-	)
-	(text "Maybe use the same one in the esp32 dev package"
-		(exclude_from_sim no)
-		(at 343.154 168.402 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-		)
-		(uuid "a7c6cf14-93c5-48f0-91be-4bc8aa7d0ab4")
 	)
 	(text "* wrong footprint description"
 		(exclude_from_sim no)
@@ -2738,16 +2740,6 @@
 			)
 		)
 		(uuid "c6c5edf5-f207-40b9-969b-e431fdca1f26")
-	)
-	(text "LED for both 5V options "
-		(exclude_from_sim no)
-		(at 294.386 87.884 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-		)
-		(uuid "f0484a7d-395f-4bef-8a2b-ffd54ba07075")
 	)
 	(junction
 		(at 66.04 187.96)
@@ -5525,7 +5517,7 @@
 				(justify right)
 			)
 		)
-		(property "Value" "63.4k"
+		(property "Value" "64.9k"
 			(at 116.84 95.2499 0)
 			(effects
 				(font
@@ -6654,7 +6646,7 @@
 				(justify right)
 			)
 		)
-		(property "Value" "330k"
+		(property "Value" "649k"
 			(at 104.14 69.8499 0)
 			(effects
 				(font
@@ -7134,11 +7126,12 @@
 			)
 		)
 		(property "Value" "+5V0_board"
-			(at 321.31 96.52 0)
+			(at 323.85 100.3299 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(justify left)
 			)
 		)
 		(property "Footprint" ""
