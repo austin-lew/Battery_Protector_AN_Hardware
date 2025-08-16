@@ -4246,6 +4246,16 @@
 			(justify right bottom)
 		)
 		(uuid "c3dc89ac-6803-4d6b-b37a-2693085441a4")
+		(property "Netclass" "90R"
+			(at 125.73 199.644 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+					(italic yes)
+				)
+				(justify right)
+			)
+		)
 	)
 	(label "USB_DP"
 		(at 135.89 205.74 180)
@@ -4256,6 +4266,16 @@
 			(justify right bottom)
 		)
 		(uuid "f33a278e-2e20-484d-b23d-328790e2dbf2")
+		(property "Netclass" "90R"
+			(at 125.984 204.724 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+					(italic yes)
+				)
+				(justify right)
+			)
+		)
 	)
 	(hierarchical_label "USB_DN"
 		(shape output)
@@ -4794,7 +4814,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "1uF"
+		(property "Value" "1u"
 			(at 374.65 200.6599 0)
 			(effects
 				(font
@@ -5952,7 +5972,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "1uF"
+		(property "Value" "1u"
 			(at 317.5 200.6599 0)
 			(effects
 				(font
@@ -7404,7 +7424,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
+		(property "Footprint" "Capacitor_SMD:C_1206_3216Metric"
 			(at 67.0052 86.36 0)
 			(effects
 				(font

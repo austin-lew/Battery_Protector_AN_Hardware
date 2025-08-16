@@ -2559,7 +2559,7 @@
 				)
 			)
 		)
-		(property "Value" "150nF X7R"
+		(property "Value" "150n"
 			(at 63.5 151.13 90)
 			(effects
 				(font
