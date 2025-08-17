@@ -74,22 +74,6 @@
         [
           "annular_width|84556000|119570000|70b6737a-5164-45e9-ab3a-779f485a8ca6|00000000-0000-0000-0000-000000000000",
           "mounting hole does not follow annular width rule"
-        ],
-        [
-          "hole_clearance|84706000|112200000|9f99fe33-aaaf-482d-bb2c-3788d77e793f|6513d420-ab80-4f4e-85f4-32ef2be9b0ad",
-          "Part of usbc footprint"
-        ],
-        [
-          "hole_clearance|84706000|112200000|bbb7d77b-7f72-473f-8abc-860f21a3cf6c|6513d420-ab80-4f4e-85f4-32ef2be9b0ad",
-          "Part of usbc footprint"
-        ],
-        [
-          "hole_clearance|84706000|118300000|87e8470f-4749-4198-8faf-d3ab31e8ab27|4566d619-0b2b-4712-8285-b3385bdf5930",
-          "Part of usbc footprint"
-        ],
-        [
-          "hole_clearance|84706000|118300000|fbbe78c1-99c0-4b32-b158-25c06748dbc4|4566d619-0b2b-4712-8285-b3385bdf5930",
-          "Part of usbc footprint"
         ]
       ],
       "meta": {
@@ -660,6 +644,42 @@
           "group_by": false,
           "label": "#",
           "name": "${ITEM_NUMBER}",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "Manufacturer_Part_Number",
+          "name": "Manufacturer_Part_Number",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "Manufacturer_Name",
+          "name": "Manufacturer_Name",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "Height",
+          "name": "Height",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "Mouser Part Number",
+          "name": "Mouser Part Number",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "Mouser Price/Stock",
+          "name": "Mouser Price/Stock",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "Package",
+          "name": "Package",
           "show": false
         }
       ],
