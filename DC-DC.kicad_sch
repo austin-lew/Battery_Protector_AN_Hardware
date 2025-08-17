@@ -2700,16 +2700,6 @@
 		)
 		(uuid "135f491a-9aa0-4d22-aaa6-34e071fb31ca")
 	)
-	(text "*"
-		(exclude_from_sim no)
-		(at 161.798 43.688 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-		)
-		(uuid "24578e79-9e41-4927-9e19-78971b517ca1")
-	)
 	(text "4ms Soft Start"
 		(exclude_from_sim no)
 		(at 156.972 102.362 0)
@@ -4466,7 +4456,6 @@
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(fields_autoplaced yes)
 		(uuid "141305ca-4062-402d-a32d-ffc7260f7cf3")
 		(property "Reference" "C6"
 			(at 165.1 43.18 90)
@@ -4477,7 +4466,7 @@
 			)
 		)
 		(property "Value" "100n"
-			(at 165.1 45.72 90)
+			(at 165.608 45.974 90)
 			(effects
 				(font
 					(size 1.27 1.27)

@@ -48,7 +48,7 @@
         "silk_text_thickness": 0.1,
         "silk_text_upright": false,
         "zones": {
-          "min_clearance": 0.0
+          "min_clearance": 0.25
         }
       },
       "diff_pair_dimensions": [
@@ -58,7 +58,40 @@
           "width": 0.0
         }
       ],
-      "drc_exclusions": [],
+      "drc_exclusions": [
+        [
+          "annular_width|80376000|110930000|2f90feb0-b6b1-4fea-80fa-774c10e328f9|00000000-0000-0000-0000-000000000000",
+          "mounting hole does not follow annular width rule"
+        ],
+        [
+          "annular_width|80376000|119570000|b530b83f-0b3e-444b-82ba-149e2addffa4|00000000-0000-0000-0000-000000000000",
+          "mounting hole does not follow annular width rule"
+        ],
+        [
+          "annular_width|84556000|110930000|189074cf-f2c3-40ad-9368-443dccf747c4|00000000-0000-0000-0000-000000000000",
+          "mounting hole does not follow annular width rule"
+        ],
+        [
+          "annular_width|84556000|119570000|70b6737a-5164-45e9-ab3a-779f485a8ca6|00000000-0000-0000-0000-000000000000",
+          "mounting hole does not follow annular width rule"
+        ],
+        [
+          "hole_clearance|84706000|112200000|9f99fe33-aaaf-482d-bb2c-3788d77e793f|6513d420-ab80-4f4e-85f4-32ef2be9b0ad",
+          "Part of usbc footprint"
+        ],
+        [
+          "hole_clearance|84706000|112200000|bbb7d77b-7f72-473f-8abc-860f21a3cf6c|6513d420-ab80-4f4e-85f4-32ef2be9b0ad",
+          "Part of usbc footprint"
+        ],
+        [
+          "hole_clearance|84706000|118300000|87e8470f-4749-4198-8faf-d3ab31e8ab27|4566d619-0b2b-4712-8285-b3385bdf5930",
+          "Part of usbc footprint"
+        ],
+        [
+          "hole_clearance|84706000|118300000|fbbe78c1-99c0-4b32-b158-25c06748dbc4|4566d619-0b2b-4712-8285-b3385bdf5930",
+          "Part of usbc footprint"
+        ]
+      ],
       "meta": {
         "version": 2
       },
@@ -76,9 +109,9 @@
         "duplicate_footprints": "warning",
         "extra_footprint": "warning",
         "footprint": "error",
-        "footprint_filters_mismatch": "ignore",
+        "footprint_filters_mismatch": "warning",
         "footprint_symbol_mismatch": "warning",
-        "footprint_type_mismatch": "ignore",
+        "footprint_type_mismatch": "warning",
         "hole_clearance": "error",
         "hole_to_hole": "warning",
         "holes_co_located": "warning",
@@ -490,13 +523,40 @@
         "via_diameter": 0.6,
         "via_drill": 0.3,
         "wire_width": 6
+      },
+      {
+        "clearance": 0.2,
+        "diff_pair_gap": 0.2,
+        "diff_pair_width": 0.15,
+        "microvia_diameter": 0.3,
+        "microvia_drill": 0.1,
+        "name": "90R",
+        "pcb_color": "rgb(245, 88, 255)",
+        "priority": 0,
+        "schematic_color": "rgba(0, 0, 0, 0.000)",
+        "track_width": 0.2,
+        "via_diameter": 0.6,
+        "via_drill": 0.3
       }
     ],
     "meta": {
       "version": 4
     },
     "net_colors": null,
-    "netclass_assignments": null,
+    "netclass_assignments": {
+      "/DC-DC/USB_DN": [
+        "90R"
+      ],
+      "/DC-DC/USB_DP": [
+        "90R"
+      ],
+      "/MCU/DN": [
+        "90R"
+      ],
+      "/MCU/DP": [
+        "90R"
+      ]
+    },
     "netclass_patterns": []
   },
   "pcbnew": {
