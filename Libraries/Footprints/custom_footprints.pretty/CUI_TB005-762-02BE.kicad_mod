@@ -4,7 +4,7 @@
 	(generator_version "9.0")
 	(layer "F.Cu")
 	(property "Reference" "REF**"
-		(at -0.365 -6.589 0)
+		(at -1 -6.5 0)
 		(layer "F.SilkS")
 		(uuid "96d44b1e-928e-4511-8d44-9c69192de4a5")
 		(effects
@@ -90,17 +90,6 @@
 		(layer "F.SilkS")
 		(uuid "c15bfa06-d014-430f-83cd-ff295ac709ed")
 	)
-	(fp_circle
-		(center 0 -5.7)
-		(end 0.1 -5.7)
-		(stroke
-			(width 0.2)
-			(type solid)
-		)
-		(fill no)
-		(layer "F.SilkS")
-		(uuid "cf9a7305-158f-4493-afcd-c12110994af7")
-	)
 	(fp_line
 		(start -4.06 -4.95)
 		(end 11.68 -4.95)
@@ -180,17 +169,6 @@
 		)
 		(layer "F.Fab")
 		(uuid "e2880850-c009-4567-ae52-7885eaaae0a4")
-	)
-	(fp_circle
-		(center 0 -5.7)
-		(end 0.1 -5.7)
-		(stroke
-			(width 0.2)
-			(type solid)
-		)
-		(fill no)
-		(layer "F.Fab")
-		(uuid "dd3ef178-cc1e-4d03-b692-35c2d218dfa3")
 	)
 	(pad "1" thru_hole rect
 		(at 0 0)
