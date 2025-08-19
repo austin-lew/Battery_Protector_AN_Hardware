@@ -3518,6 +3518,16 @@
 		)
 		(uuid "8d275ecc-eeae-4063-8e81-c7f9ca247f80")
 	)
+	(text "Stitching Cap"
+		(exclude_from_sim no)
+		(at 49.276 219.456 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "8f8f5603-8fe6-4f3f-a430-1ef88a0cc694")
+	)
 	(text "USB-to-UART Bridge"
 		(exclude_from_sim no)
 		(at 75.692 233.68 0)
@@ -4600,6 +4610,16 @@
 	)
 	(wire
 		(pts
+			(xy 50.8 193.04) (xy 50.8 196.85)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "843068a0-4dc1-4363-9bc3-fcb57e11feb1")
+	)
+	(wire
+		(pts
 			(xy 85.09 90.17) (xy 97.79 90.17)
 		)
 		(stroke
@@ -5167,6 +5187,16 @@
 			(type default)
 		)
 		(uuid "c787ad89-96fc-4f92-9ced-581849d0f8be")
+	)
+	(wire
+		(pts
+			(xy 50.8 204.47) (xy 50.8 210.82)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ccfb6f3e-237d-4462-89fb-d2295e87efd8")
 	)
 	(wire
 		(pts
@@ -8674,7 +8704,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "LIS3DH"
+		(property "Value" "LIS3DHTR"
 			(at 338.6933 208.28 0)
 			(effects
 				(font
@@ -8683,7 +8713,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Package_LGA:LGA-16_3x3mm_P0.5mm_LayoutBorder3x5y"
+		(property "Footprint" "custom_footprints:LGA-16_3x3mm_P0.5mm_LayoutBorder3x5y_2"
 			(at 339.09 217.17 0)
 			(effects
 				(font
@@ -8719,7 +8749,7 @@
 				(hide yes)
 			)
 		)
-		(property "Manufacturer_Part_Number" "LIS3DH"
+		(property "Manufacturer_Part_Number" "LIS3DHTR"
 			(at 336.55 190.5 0)
 			(effects
 				(font
@@ -8728,7 +8758,7 @@
 				(hide yes)
 			)
 		)
-		(property "Package" "LGA-16"
+		(property "Package" "16-LGA"
 			(at 336.55 190.5 0)
 			(effects
 				(font
@@ -9078,12 +9108,30 @@
 				(hide yes)
 			)
 		)
-		(property "Package" ""
+		(property "Package" "12.8X12.8 SMD"
 			(at 259.08 135.89 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+			)
+		)
+		(property "Manufacturer_Name" "Same Sky (Formerly CUI Devices)"
+			(at 259.08 135.89 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer_Part_Number" "CT-1205C-SMT-TR"
+			(at 259.08 135.89 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
 			)
 		)
 		(pin "1"
@@ -9234,13 +9282,79 @@
 		)
 	)
 	(symbol
+		(lib_id "power:GND")
+		(at 50.8 210.82 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "339d40c5-de15-461a-9365-5110ff9c3c54")
+		(property "Reference" "#PWR07"
+			(at 50.8 217.17 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 50.8 215.9 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 50.8 210.82 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 50.8 210.82 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 50.8 210.82 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "dccc3a5a-f29a-4689-b781-230d2940ff74")
+		)
+		(instances
+			(project "battery_protector"
+				(path "/b2975477-3b95-446c-b662-4cca32764c73/de1325c4-0edb-4a9a-bc0f-47e138764fec"
+					(reference "#PWR07")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Device:R")
 		(at 101.6 107.95 270)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
-		(dnp no)
+		(dnp yes)
 		(uuid "37d59814-bcf2-463b-938b-40a310bb40be")
 		(property "Reference" "R9"
 			(at 101.6 103.378 90)
@@ -9258,7 +9372,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
+		(property "Footprint" "Resistor_SMD:R_0201_0603Metric"
 			(at 101.6 106.172 90)
 			(effects
 				(font
@@ -10072,7 +10186,7 @@
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
-		(dnp no)
+		(dnp yes)
 		(uuid "4a657051-6ee6-48fc-b64a-004c6a851fe9")
 		(property "Reference" "R32"
 			(at 185.42 69.85 90)
@@ -10090,7 +10204,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
+		(property "Footprint" "Resistor_SMD:R_0201_0603Metric"
 			(at 185.42 74.422 90)
 			(effects
 				(font
@@ -10135,6 +10249,103 @@
 			(project "battery_protector"
 				(path "/b2975477-3b95-446c-b662-4cca32764c73/de1325c4-0edb-4a9a-bc0f-47e138764fec"
 					(reference "R32")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:C")
+		(at 50.8 200.66 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "5619e634-3a45-4054-bfd8-dd0058284f6f")
+		(property "Reference" "C25"
+			(at 54.61 199.3899 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "0.1u"
+			(at 54.61 201.9299 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
+			(at 51.7652 204.47 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 50.8 200.66 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Unpolarized capacitor"
+			(at 50.8 200.66 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer_Name" "YAGEO"
+			(at 50.8 200.66 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer_Part_Number" "CC0603KRX7R7BB104"
+			(at 50.8 200.66 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Package" "603"
+			(at 50.8 200.66 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "47a62beb-c7cd-45be-9b20-8d29b47efa17")
+		)
+		(pin "1"
+			(uuid "15258787-34bc-48c2-acc8-0c73418872fc")
+		)
+		(instances
+			(project "battery_protector"
+				(path "/b2975477-3b95-446c-b662-4cca32764c73/de1325c4-0edb-4a9a-bc0f-47e138764fec"
+					(reference "C25")
 					(unit 1)
 				)
 			)
@@ -10819,7 +11030,7 @@
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
-		(dnp no)
+		(dnp yes)
 		(uuid "82a1ebd6-5792-4508-8119-0872f86e91b1")
 		(property "Reference" "R44"
 			(at 101.6 110.998 90)
@@ -10837,7 +11048,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
+		(property "Footprint" "Resistor_SMD:R_0201_0603Metric"
 			(at 101.6 113.792 90)
 			(effects
 				(font
@@ -11429,7 +11640,7 @@
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
-		(dnp no)
+		(dnp yes)
 		(uuid "933861d1-154b-41cb-ae15-da379166294e")
 		(property "Reference" "R46"
 			(at 101.6 126.238 90)
@@ -11447,7 +11658,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
+		(property "Footprint" "Resistor_SMD:R_0201_0603Metric"
 			(at 101.6 129.032 90)
 			(effects
 				(font
@@ -11949,7 +12160,7 @@
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
-		(dnp no)
+		(dnp yes)
 		(uuid "c10e3486-7a0d-4916-b9cd-7b9947a8004c")
 		(property "Reference" "R33"
 			(at 190.5 67.31 90)
@@ -11967,7 +12178,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
+		(property "Footprint" "Resistor_SMD:R_0201_0603Metric"
 			(at 190.5 71.882 90)
 			(effects
 				(font
@@ -12300,12 +12511,30 @@
 				(hide yes)
 			)
 		)
-		(property "Package" ""
+		(property "Package" "12POS 2.54MM"
 			(at 379.73 49.53 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+			)
+		)
+		(property "Manufacturer_Name" "Adam Tech"
+			(at 379.73 49.53 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer_Part_Number" "PH1-12-UA       "
+			(at 379.73 49.53 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
 			)
 		)
 		(pin "11"
@@ -12919,6 +13148,71 @@
 		)
 	)
 	(symbol
+		(lib_id "power:VBUS")
+		(at 50.8 193.04 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "dd9087c4-8ac1-43dc-8bf5-9a3d2debebd3")
+		(property "Reference" "#PWR08"
+			(at 50.8 196.85 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "+3V3"
+			(at 50.8 187.96 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 50.8 193.04 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 50.8 193.04 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"VBUS\""
+			(at 50.8 193.04 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "6d1fa354-a11f-4a0e-9bb0-5c26d8c2f757")
+		)
+		(instances
+			(project "battery_protector"
+				(path "/b2975477-3b95-446c-b662-4cca32764c73/de1325c4-0edb-4a9a-bc0f-47e138764fec"
+					(reference "#PWR08")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Device:C")
 		(at 354.33 186.69 0)
 		(unit 1)
@@ -13313,7 +13607,7 @@
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
-		(dnp no)
+		(dnp yes)
 		(uuid "ef8ac21f-701d-48fb-9331-01b8147a9aba")
 		(property "Reference" "R45"
 			(at 101.6 118.618 90)
@@ -13331,7 +13625,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
+		(property "Footprint" "Resistor_SMD:R_0201_0603Metric"
 			(at 101.6 121.412 90)
 			(effects
 				(font
