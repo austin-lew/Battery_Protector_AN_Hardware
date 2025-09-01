@@ -1,5 +1,5 @@
-### Footprint positions - created on 2025-08-18T19:43:21-0700 ###
-### Printed by KiCad version 9.0.3
+### Footprint positions - created on 2025-08-31T21:05:05-0700 ###
+### Printed by KiCad version 9.0.4
 ## Unit = mm, Angle = deg.
 ## Side : All
 # Ref     Val                          Package                                                       PosX       PosY       Rot  Side
@@ -23,7 +23,7 @@ C12       10u                          C_0603_1608Metric                        
 C13       0.1u                         C_0603_1608Metric                                         146.2000  -117.7000    0.0000  top
 C14       1u                           C_0603_1608Metric                                         146.2000  -114.7000    0.0000  top
 C15       10u                          C_0603_1608Metric                                         113.2800  -106.1000  180.0000  top
-C16       100n                         C_0603_1608Metric                                         115.5000  -109.1000   90.0000  top
+C16       100n                         C_0603_1608Metric                                         115.5800  -109.1100  -90.0000  top
 C17       10n                          C_0603_1608Metric                                         116.7500   -97.7500  180.0000  top
 C18       220n                         C_1206_3216Metric                                         107.3000   -88.6000  -90.0000  top
 C19       2.2u                         C_1206_3216Metric                                         108.3750   -84.9000  180.0000  top
@@ -47,7 +47,7 @@ D13       D_TVS                        D_0402_1005Metric                        
 D14       D_TVS                        D_0402_1005Metric                                          88.1000  -116.0000    0.0000  top
 D15       D_Schottky_AAK               VB30100S-E38W                                             143.4000   -72.5000   90.0000  top
 J1        TB005-762-02BE               CUI_TB005-762-02BE                                         85.8875   -73.6900  -90.0000  top
-J2        TB005-762-02BE               CUI_TB005-762-02BE                                        158.4000   -73.6900  -90.0000  top
+J2        TB005-762-02BE               CUI_TB005-762-02BE                                        155.3100   -81.1900   90.0000  top
 J3        USB_C_Receptacle_USB2.0_16P  USB_C_Receptacle_GCT_USB4105-xx-A_16P_TopMnt_Horizontal    81.4510  -115.2500  -90.0000  top
 J5        Conn_01x12                   PinHeader_1x12_P2.54mm_Vertical                           155.5000   -90.9400    0.0000  top
 L1        15u                          L_Bourns_SRR1208_12.7x12.7mm                               93.0000  -100.0000   90.0000  top
@@ -109,6 +109,6 @@ U2        AP2112K-3.3                  SOT-23-5                                 
 U3        TPS2116DRL                   SOT-583-8                                                  93.0922  -110.7997    0.0000  top
 U4        CP2102N-Axx-xQFN28           QFN-28-1EP_5x5mm_P0.5mm_EP3.35x3.35mm                      97.6000  -122.1000  -90.0000  top
 U5        ESP32-C3-WROOM-02            ESP32-C3-WROOM                                            132.6500  -112.2000  180.0000  top
-U6        LIS3DH                       LGA-16_3x3mm_P0.5mm_LayoutBorder3x5y                      112.9000  -108.7250  -90.0000  top
+U6        LIS3DHTR                     LGA-16_3x3mm_P0.5mm_LayoutBorder3x5y_2                    112.9000  -108.7250  -90.0000  top
 U7        2ED4820EMXUMA2               2ed4820emxuma2                                            113.6750   -91.1450   90.0000  top
 ## End
